@@ -6,37 +6,60 @@
   <title>chat</title>
 
   <style>
-    body {
-      margin: 0;
-      background: #111;
-      overflow: hidden;
-      font-family: sans-serif;
-    }
+body {
+  margin: 0;
+  background: #111;
+  overflow: hidden;
+  font-family: sans-serif;
+}
 
-    .chat-scroll {
-      height: 100dvh;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0;
-    }
+/* 상단 고정 */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  z-index: 100;
+}
 
-    .chat-scroll img {
-      width: 100%;
-      max-width: 500px;
-      display: block;
-    }
+.top-bar img {
+  width: 100%;
+  display: block;
+}
+
+/* 채팅 스크롤 */
+.chat-scroll {
+  height: 100dvh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* 상단 헤더 높이만큼 띄우기 */
+  padding-top: 120px;
+}
+
+.chat-scroll img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+}
   </style>
 </head>
 
 <body>
 
+  <div class="top-bar">
+    <img src="images/top.webp">
+  </div>
+
   <div class="chat-scroll">
 
-    <img src="https://placehold.co/500x900/222/FFF?text=CHAT+1">
-    <img src="https://placehold.co/500x900/333/FFF?text=CHAT+2">
-    <img src="https://placehold.co/500x900/444/FFF?text=CHAT+3">
+    <img src="images/chat1.webp">
+    <img src="images/chat2.webp">
+    <img src="images/chat3.webp">
 
   </div>
 
