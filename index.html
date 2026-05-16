@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>chat</title>
 
+
 <style>
 html,
 body {
@@ -46,6 +47,35 @@ body {
   max-width: 500px;
   display: block;
 }
+
+  .bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  z-index: 100;
+  background: #151515;
+}
+
+.bottom-bar img {
+  width: 100%;
+  display: block;
+}
+
+  .chat-scroll {
+  height: 100dvh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #151515;
+  padding-top: min(13.72vw, 68.6px);
+  padding-bottom: min(12vw, 60px);
+  box-sizing: border-box;
+}
+  
 </style>
 </head>
 
@@ -59,6 +89,8 @@ body {
 
     <img src="moon_002.png">
 
+    <div class="bottom-bar">
+  <img src="moon_003.png">
   </div>
 
 </body>
